@@ -10,6 +10,6 @@
  * @contributors    Lamber Lilit (winter.rituel@gmail.com)
  * @support         help@merkulov.design
  **/
-@import "aos/dist/aos";
-@import "tiny-slider/dist/tiny-slider";
-@import "baguettebox.js/dist/baguetteBox.min";
+@import "../node_modules/aos/src/sass/aos.scss";
+@import "../node_modules/tiny-slider/src/tiny-slider.scss";
+@import "../node_modules/baguettebox.js/src/baguetteBox.scss";

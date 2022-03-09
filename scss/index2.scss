@@ -11,13 +11,13 @@
  * @support         help@merkulov.design
  **/
 // BASE
-@import "./../node_modules/bootstrap/dist/css/bootstrap-grid.css";
+@import "../node_modules/bootstrap/scss/bootstrap-grid.scss";
 @import "base/base";
 @import "base/mixins";
 @import "base/variables";
 @import "base/keyframes";
 @import "global/global";
-//@import "../fonts/icomoon/style.css";
+@import url(../css/font-style.css);
 // BASE
 
 @import "blocks/header";
@@ -36,5 +36,5 @@
 @import "blocks/footer";
 
 body {
-    color: #162739;
+  color: #162739;
 }

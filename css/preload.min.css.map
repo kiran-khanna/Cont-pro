@@ -7,5 +7,5 @@
         "../scss/global/_fontface.scss"
     ],
     "names": [],
-    "file": "preload.css"
+    "file": "preload.min.css"
 }
