@@ -131,7 +131,7 @@
                     width: 0;
                     height: 2px;
                     background-color: $accent;
-                    bottom: -6px;
+                    bottom: -4px;
                     transition: width .3s ease-in-out;
                 }
                 &--current {
@@ -204,7 +204,7 @@
                     height: 2px;
                     background: $accent;
                     left: 0;
-                    bottom: -6px;
+                    bottom: -4px;
                     transition: width .3s ease-in-out;
                 }
                 &:hover, &:focus,

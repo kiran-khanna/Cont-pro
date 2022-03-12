@@ -80,7 +80,7 @@
                 }
                 .number {
                     @include archBold;
-                    color: red;
+                    color: $accent;
                 }
                 .label {
                     color: #fff;
@@ -93,7 +93,7 @@
             }
         }
         &-card {
-            display: none;
+            // display: none;
             background: radial-gradient(97.35% 239.81% at 1.55% 6.12%, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.52) 100%);
             backdrop-filter: blur(80px);
             overflow: hidden;
