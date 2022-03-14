@@ -1,24 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
-        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <title>Contacts | RMC Construction</title>
-        <link rel="stylesheet preload" as="style" href="css/preload.min.css" />
-        <link rel="stylesheet preload" as="style" href="css/libs.min.css" />
-        <link rel="shortcut icon" href="/favicon.png">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Contacts | RMC Construction</title>
+    <link rel="stylesheet preload" as="style" href="css/preload.min.css" />
+    <link rel="stylesheet preload" as="style" href="css/libs.min.css" />
+    <link rel="shortcut icon" href="/favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Montserrat:wght@100&display=swap"
         rel="stylesheet">
-        <link rel="stylesheet" href="css/contacts2.min.css" />
-    </head>
-    <body>
-        <header class="header primary-bg" data-page="contacts">
-            <div class="header_navbar">
-                <div class="container d-flex flex-wrap flex-lg-nowrap align-items-center justify-content-between">
-                    <a class="brand d-inline-flex align-items-center justify-content-center" href="index.html">
+    <link rel="stylesheet" href="css/contacts2.min.css" />
+
+
+    <style>
+        .success {
+            margin-top: 50px;
+        }
+
+        #status {
+            width: 100%;
+            max-width: 500px;
+            text-align: center;
+            padding: 10px;
+            border-radius: 8px;
+        }
+
+        #status.success {
+            background-color: rgb(211, 250, 153);
+            animation: status 12s ease forwards;
+        }
+
+        #status.error {
+            background-color: rgb(250, 129, 92);
+            color: white;
+            animation: status 12s ease forwards;
+        }
+
+        @keyframes status {
+            0% {
+                opacity: 1;
+                pointer-events: all;
+            }
+
+            90% {
+                opacity: 1;
+                pointer-events: all;
+            }
+
+            100% {
+                opacity: 0;
+                pointer-events: none;
+            }
+        }
+    </style>
+
+ 
+</head>
+
+
+<body>
+    <header class="header primary-bg" data-page="contacts">
+        <div class="header_navbar">
+            <div class="container d-flex flex-wrap flex-lg-nowrap align-items-center justify-content-between">
+                <a class="brand d-inline-flex align-items-center justify-content-center" href="index.html">
                     <img src="/img/home/Logos/RMCWHite.png" alt="rmc-logo" height="65px"><span style="margin-top: 12px;
                         margin-left: 14px;
                         width: 300px;
@@ -30,44 +78,44 @@
 font-family: 'Montserrat', sans-serif;">Builders & Promoters</p></span>
                 </a>
                 </a>
-                    <nav class="header_navbar-nav">
-                        <ul class="header_navbar-nav_list">
-                            <li class="list-item">
-                                <a class="link link--single" href="index.html" data-page="home">Home</a>
-                                <!-- <button class="dropdown-trigger d-inline-flex align-items-center">
+                <nav class="header_navbar-nav">
+                    <ul class="header_navbar-nav_list">
+                        <li class="list-item">
+                            <a class="link link--single" href="index.html" data-page="home">Home</a>
+                            <!-- <button class="dropdown-trigger d-inline-flex align-items-center">
                                     Home <i class="icon-chevron_right icon"></i>
                                 </button> -->
-                                <!-- <div class="dropdown-content">
+                            <!-- <div class="dropdown-content">
                                     <a class="link link--single" href="index.html" data-page="home">Home</a> -->
-                                    <!-- <a class="link link--single" href="index2.html" data-page="home2">Home 2</a> -->
-                                <!-- </div> -->
-                            </li>
-                            <li class="list-item">
-                                <a class="link link--single" href="about.html" data-page="about">About</a>
-                            </li>
-                            <li class="list-item">
-                                <a class="link link--single" href="services.html" data-page="services">Services</a>
-                                <!-- <button class="dropdown-trigger d-inline-flex align-items-center">
+                            <!-- <a class="link link--single" href="index2.html" data-page="home2">Home 2</a> -->
+                            <!-- </div> -->
+                        </li>
+                        <li class="list-item">
+                            <a class="link link--single" href="about.html" data-page="about">About</a>
+                        </li>
+                        <li class="list-item">
+                            <a class="link link--single" href="services.html" data-page="services">Services</a>
+                            <!-- <button class="dropdown-trigger d-inline-flex align-items-center">
                                     Services <i class="icon-chevron_right icon"></i>
                                 </button> -->
-                                <!-- <div class="dropdown-content"> -->
-                                    <!-- <a class="link link--single" href="services.html" data-page="services">Services</a> -->
-                                    <!-- <a class="link link--single" href="single-service.html" data-page="single-service">Single service</a>
+                            <!-- <div class="dropdown-content"> -->
+                            <!-- <a class="link link--single" href="services.html" data-page="services">Services</a> -->
+                            <!-- <a class="link link--single" href="single-service.html" data-page="single-service">Single service</a>
                                     <a class="link link--single" href="team.html" data-page="team">Team</a> -->
-                                <!-- </div> -->
-                            </li>
-                            <li class="list-item">
-                                <a class="link link--single" href="projects.html" data-page="projects">Projects</a>
-                                <!-- <button class="dropdown-trigger d-inline-flex align-items-center">
+                            <!-- </div> -->
+                        </li>
+                        <li class="list-item">
+                            <a class="link link--single" href="projects.html" data-page="projects">Projects</a>
+                            <!-- <button class="dropdown-trigger d-inline-flex align-items-center">
                                     Projects <i class="icon-chevron_right icon"></i>
                                 </button> -->
-                                <!-- <div class="dropdown-content"> -->
-                                    <!-- <a class="link link--single" href="projects.html" data-page="projects">Projects</a> -->
-                                    <!-- <a class="link link--single" href="projects2.html" data-page="projects2">Projects 2</a>
+                            <!-- <div class="dropdown-content"> -->
+                            <!-- <a class="link link--single" href="projects.html" data-page="projects">Projects</a> -->
+                            <!-- <a class="link link--single" href="projects2.html" data-page="projects2">Projects 2</a>
                                     <a class="link link--single" href="single-project.html" data-page="single-project">Single project</a> -->
-                                <!-- </div> -->
-                            </li>
-                            <!-- <li class="list-item">
+                            <!-- </div> -->
+                        </li>
+                        <!-- <li class="list-item">
                                 <button class="dropdown-trigger d-inline-flex align-items-center">
                                     Blog <i class="icon-chevron_right icon"></i>
                                 </button>
@@ -77,17 +125,17 @@ font-family: 'Montserrat', sans-serif;">Builders & Promoters</p></span>
                                     <a class="link link--single" href="single-post.html" data-page="single-post">Single post</a>
                                 </div>
                             </li> -->
-                            <li class="list-item">
-                                <a class="link link--single" href="contacts.html" data-page="contacts">Contact</a>
-                                <!-- <button class="dropdown-trigger d-inline-flex align-items-center">
+                        <li class="list-item">
+                            <a class="link link--single" href="contacts.html" data-page="contacts">Contact</a>
+                            <!-- <button class="dropdown-trigger d-inline-flex align-items-center">
                                     Contacts <i class="icon-chevron_right icon"></i>
                                 </button> -->
-                                <!-- <div class="dropdown-content">
+                            <!-- <div class="dropdown-content">
                                     <a class="link link--single" href="contacts.html" data-page="contacts">Contacts</a>
                                     <a class="link link--single" href="contacts2.html" data-page="contacts2">Contacts 2</a>
                                 </div> -->
-                            </li>
-                            <!-- <li class="list-item">
+                        </li>
+                        <!-- <li class="list-item">
                                 <button class="dropdown-trigger d-inline-flex align-items-center">
                                     Pages <i class="icon-chevron_right icon"></i>
                                 </button>
@@ -98,229 +146,98 @@ font-family: 'Montserrat', sans-serif;">Builders & Promoters</p></span>
                                     <a class="link link--single" href="404.html" data-page="404">404</a>
                                 </div>
                             </li> -->
-                        </ul>
-                    </nav>
-                    <button class="hamburger">
-                        <span class="line line--short"></span>
-                        <span class="line"></span>
-                        <span class="line line--short"></span>
-                        <span class="line"></span>
-                    </button>
-                </div>
+                    </ul>
+                </nav>
+                <button class="hamburger">
+                    <span class="line line--short"></span>
+                    <span class="line"></span>
+                    <span class="line line--short"></span>
+                    <span class="line"></span>
+                </button>
             </div>
+        </div>
 
-            <div class="header_extension">
-                <div class="container">
-                    <div class="section_header">
-                        <span class="subtitle subtitle--extended">Build relationships</span>
-                        <h1 class="title">Contacts</h1>
-                        <ul class="breadcrumbs d-flex align-items-center">
-                            <li class="breadcrumbs_item">
-                                <a href="index.html">Home</a>
-                            </li>
-                            <li class="breadcrumbs_item breadcrumbs_item--current">
-                                <span>Contacts</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <picture>
-                    <source data-srcset="img/home/plan--resize.png" srcset="img/home/plan--resize.png" type="image/png" data-role="deco" />
-                    <img class="lazy plan" data-src="img/home/plan--resize.png" src="img/home/plan--resize.png" alt="media" data-role="deco" />
-                </picture>
-            </div>
-        </header>
-        <!-- CONTACTS CONTENT START  -->
-        <main>
-            <section class="contact section">
-                <div class="container d-flex flex-wrap justify-content-center justify-content-lg-between align-items-end">
-                    <div class="wrapper wrapper--form col-12 col-lg-6">
-                        <div class="contact_header section_header">
-                            <span class="subtitle">Contact us</span>
-                            <h2 class="title">
-                                Get
-                                <span class="highlight">In Touch</span>
-                            </h2>
-                            <p class="text">
-                                Pellentesque sit amet porttitor eget dolor morbi non arcu. Vitae justo eget magna fermentum iaculis eu non
-                            </p>
-                        </div>
-                        <form
-                            action="#"
-                            class="contact_form contact-form d-flex flex-wrap justify-content-between"
-                            method="POST"
-                            name="feedbackForm"
-                            data-type="feedback"
-                        >
-                            <input
-                                class="contact-form_field contact-form_field--half field required"
-                                name="feedbackName"
-                                id="feedbackName"
-                                type="text"
-                                placeholder="Full name"
-                            />
-                            <input
-                                class="contact-form_field contact-form_field--half field required"
-                                data-type="tel"
-                                type="text"
-                                name="feedbackTel"
-                                id="feedbackTel"
-                                placeholder="Phone"
-                            />
-                            <input
-                                class="contact-form_field field required"
-                                data-type="email"
-                                type="text"
-                                name="feedbackEmail"
-                                id="feedbackEmail"
-                                placeholder="Email Address"
-                            />
-                            <textarea
-                                class="contact-form_field field required"
-                                data-type="message"
-                                name="feedbackMessage"
-                                id="feedbackMessage"
-                                placeholder="Message"
-                            ></textarea>
-                            <button type="submit" class="contact-form_btn btn">Send message</button>
-                        </form>
-                    </div>
-                    <div class="wrapper wrapper--bg col-12 col-lg-5">
-                        <ul class="contact_info contact-info">
-                            <li class="contact-info_group">
-                                <span class="name">Address</span>
-                                <span class="content">R.M.TOWERS, No. 108, Chamiers Road, Chennai - 600 018</span>
-                            </li>
-                            <li class="contact-info_group">
-                                <span class="name">Email</span>
-                                <span class="content d-inline-flex flex-column">
-                                    <a class="link" href="mailto:contact@rmccompanies.in">contact@rmccompanies.in</a>
-                                    <a class="link" href="mailto:rmccontructions.rmc@gmail.com">rmccontructions.rmc@gmail.com</a>
-                                </span>
-                            </li>
-                            <li class="contact-info_group">
-                                <span class="name">Phone</span>
-                                <span class="content d-inline-flex flex-column">
-                                    <a class="link" href="tel:+13136453395">044 - 2436 4343</a>
-                                    <a class="link" href="tel:+14699702609">044 - 2436 4344</a>
-                                    <a class="link" href="tel:+14699702609">044 - 2433 5897</a>
-                                </span>
-                            </li>
-                        </ul>
-                        <ul class="socials d-flex align-items-center justify-content-start">
-                            <li class="socials_item">
-                                <a class="socials_item-link" href="#" target="_blank" rel="noopener noreferrer">
-                                    <i class="icon-facebook"></i>
-                                </a>
-                            </li>
-                            <li class="socials_item">
-                                <a class="socials_item-link" href="#" target="_blank" rel="noopener noreferrer">
-                                    <i class="icon-instagram"></i>
-                                </a>
-                            </li>
-                            <li class="socials_item">
-                                <a class="socials_item-link" href="#" target="_blank" rel="noopener noreferrer">
-                                    <i class="icon-twitter"></i>
-                                </a>
-                            </li>
-                            <li class="socials_item">
-                                <a class="socials_item-link" href="#" target="_blank" rel="noopener noreferrer">
-                                    <i class="icon-whatsapp"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-        
-        </main>
-        <!-- CONTACTS CONTENT END  -->
-        <footer class="footer primary-bg">
+        <div class="header_extension">
             <div class="container">
-                <div class="footer_main d-flex flex-wrap justify-content-md-between col-12">
-                    <div class="footer_main-block col-sm-12 col-xl-auto">
-                        <a class="brand d-inline-flex align-items-center justify-content-center" href="index.html">
-                            <a class="brand d-inline-flex align-items-center justify-content-center" href="index.html">
-                    <img src="/img/home/Logos/RMCWHite.png" alt="rmc-logo" height="65px"><span style="margin-top: 12px;
-                        margin-left: 14px;
-                        width: 300px;
-                        font-size: 16px;
-                        font-weight: 100;">RMC Constructions<p style="
-                        width: 300px;
-                        font-size: 15px;
-                        font-family: 'Lato', sans-serif;
-font-family: 'Montserrat', sans-serif;">Builders & Promoters</p></span>
-                </a>
-                        </a>
-                        <p class="footer_main-block_subtitle footer_main-block_subtitle--brand">
-                            Libero volutpat sed cras ornare arcu dui vivamus. Ac tortor dignissim convallis aenean et tortor
-                            at risus
-                            viverra
+                <div class="section_header">
+                    <span class="subtitle subtitle--extended">Build relationships</span>
+                    <h1 class="title">Contacts</h1>
+                    <ul class="breadcrumbs d-flex align-items-center">
+                        <li class="breadcrumbs_item">
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li class="breadcrumbs_item breadcrumbs_item--current">
+                            <span>Contacts</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <picture>
+                <source data-srcset="img/home/plan--resize.png" srcset="img/home/plan--resize.png" type="image/png"
+                    data-role="deco" />
+                <img class="lazy plan" data-src="img/home/plan--resize.png" src="img/home/plan--resize.png" alt="media"
+                    data-role="deco" />
+            </picture>
+        </div>
+    </header>
+    <!-- CONTACTS CONTENT START  -->
+    <main>
+        <section class="contact section">
+            <div class="container d-flex flex-wrap justify-content-center justify-content-lg-between align-items-end">
+                <div class="wrapper wrapper--form col-12 col-lg-6">
+                    <div class="contact_header section_header">
+                        <span class="subtitle">Contact us</span>
+                        <h2 class="title">
+                            Get
+                            <span class="highlight">In Touch</span>
+                        </h2>
+                        <p class="text">
+                            Pellentesque sit amet porttitor eget dolor morbi non arcu. Vitae justo eget magna fermentum
+                            iaculis eu non
                         </p>
                     </div>
-                    <div class="footer_main-block col-12 col-sm-6 col-md-auto">
-                        <h4 class="footer_main-block_title">Contacts</h4>
-                        <div class="group-wrapper d-flex justify-content-center">
-                            <i class="icon-call icon"></i>
-                            <div class="group d-flex flex-column">
+                    <form id="contact" method="post"
+                        class="contact_form contact-form d-flex flex-wrap justify-content-between">
+                        <input class="contact-form_field contact-form_field--half field required username"
+                            id="firstName" type="text" name="firstName" placeholder="Name" required />
+
+                        <input class="contact-form_field contact-form_field--half field required number" data-type="tel"
+                            maxlength="10" step="0.01" name="phone" id="phone" placeholder="Phone Number" required />
+
+                        <input class="contact-form_field field required email" data-type="email" type="email"
+                            name="email" id="email" placeholder="Email ID" required />
+
+                        <textarea class="contact-form_field field required  message" data-type="message" name="message"
+                            placeholder="Message" rows="7" required></textarea>
+
+                        <button name="submit" id="contact-submit" data-submit="...Sending" type="submit"
+                            class="contact-form_btn btn submit">Send message</button>
+                    </form>
+                </div>
+                <div class="wrapper wrapper--bg col-12 col-lg-5">
+                    <ul class="contact_info contact-info">
+                        <li class="contact-info_group">
+                            <span class="name">Address</span>
+                            <span class="content">R.M.TOWERS, No. 108, Chamiers Road, Chennai - 600 018</span>
+                        </li>
+                        <li class="contact-info_group">
+                            <span class="name">Email</span>
+                            <span class="content d-inline-flex flex-column">
+                                <a class="link" href="mailto:contact@rmccompanies.in">contact@rmccompanies.in</a>
+                                <a class="link"
+                                    href="mailto:rmccontructions.rmc@gmail.com">rmccontructions.rmc@gmail.com</a>
+                            </span>
+                        </li>
+                        <li class="contact-info_group">
+                            <span class="name">Phone</span>
+                            <span class="content d-inline-flex flex-column">
                                 <a class="link" href="tel:+13136453395">044 - 2436 4343</a>
                                 <a class="link" href="tel:+14699702609">044 - 2436 4344</a>
                                 <a class="link" href="tel:+14699702609">044 - 2433 5897</a>
-                            </div>
-                        </div>
-                        <div class="group-wrapper d-flex justify-content-center">
-                            <i class="icon-location icon"></i>
-                            <div style="font-size: 16px;" class="group d-flex flex-column">
-                                <span>R.M.TOWERS,</span>
-                                <span> No. 108, Chamiers,</span>
-                                <span>Chennai - 600 018</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="footer_main-block col-12 col-sm-6 col-md-auto">
-                        <h4 class="footer_main-block_title">Company</h4>
-                        <ul class="footer_main-block_nav">
-                            <li class="list-item">
-                                <a class="link d-inline-flex align-items-center" href="about.html"> About </a>
-                            </li>
-                            <li class="list-item">
-                                <a class="link d-inline-flex align-items-center" href="services.html"> Services </a>
-                            </li>
-                            <li class="list-item">
-                                <a class="link d-inline-flex align-items-center" href="projects.html"> Projects </a>
-                            </li>
-                            <!-- <li class="list-item">
-                                <a class="link d-inline-flex align-items-center" href="blog.html"> Blog </a>
-                            </li> -->
-                        </ul>
-                    </div>
-                    <div class="footer_main-block col-12 col-md-auto">
-                        <h4 class="footer_main-block_title">Quotes of the day</h4>
-                        <p class="footer_main-block_subtitle footer_main-block_subtitle--newsletter">
-                            <span style="font-family: Archivo,sans-serif;
-                            font-weight: 900;
-                            color: #ffc631">“ </span>We shape our buildings;
-                        </p>
-                        <p class="footer_main-block_subtitle footer_main-block_subtitle--newsletter">
-                            thereafter, they shape us.<span style="font-family: Archivo,sans-serif;
-                            font-weight: 900;
-                            color: #ffc631">” </span>
-                        </p>
-                        <!-- <form class="footer_main-block_form d-flex flex-wrap flex-sm-nowrap" data-type="newsletter"
-                            action="#" method="POST" name="newsletterForm" id="newsletterForm">
-                            <input class="field required" name="newsletterEmail" id="newsletterEmail" type="text"
-                                placeholder="Email" data-type="email" />
-                            <button class="btn btn--submit btn--static" type="submit">Subscribe</button>
-                        </form> -->
-                    </div>
-                </div>
-                <div
-                    class="footer_secondary col-12 d-flex flex-wrap align-items-center justify-content-center justify-content-md-between">
-                    <p class="footer_secondary-copyright">
-                        <!-- <span>Merkulove &copy; RMC Construction Template</span> -->
-                        <span>All rights reserved Copyrights <span id="currentYear"></span></span>
-                    </p>
-                    <ul class="socials d-flex align-items-center justify-content-start socials--alt">
+                            </span>
+                        </li>
+                    </ul>
+                    <ul class="socials d-flex align-items-center justify-content-start">
                         <li class="socials_item">
                             <a class="socials_item-link" href="#" target="_blank" rel="noopener noreferrer">
                                 <i class="icon-facebook"></i>
@@ -344,10 +261,197 @@ font-family: 'Montserrat', sans-serif;">Builders & Promoters</p></span>
                     </ul>
                 </div>
             </div>
-        </footer>
-        <button id="scrollToTop" type="button">
-            <i class="icon icon-arrow_right"></i>
-        </button>
-        <script src="js/common.min.js"></script>
-    </body>
+        </section>
+
+    </main>
+    <!-- CONTACTS CONTENT END  -->
+    <footer class="footer primary-bg">
+        <div class="container">
+            <div class="footer_main d-flex flex-wrap justify-content-md-between col-12">
+                <div class="footer_main-block col-sm-12 col-xl-auto">
+                    <a class="brand d-inline-flex align-items-center justify-content-center" href="index.html">
+                        <a class="brand d-inline-flex align-items-center justify-content-center" href="index.html">
+                            <img src="/img/home/Logos/RMCWHite.png" alt="rmc-logo" height="65px"><span style="margin-top: 12px;
+                        margin-left: 14px;
+                        width: 300px;
+                        font-size: 16px;
+                        font-weight: 100;">RMC Constructions<p style="
+                        width: 300px;
+                        font-size: 15px;
+                        font-family: 'Lato', sans-serif;
+font-family: 'Montserrat', sans-serif;">Builders & Promoters</p></span>
+                        </a>
+                    </a>
+                    <p class="footer_main-block_subtitle footer_main-block_subtitle--brand">
+                        Libero volutpat sed cras ornare arcu dui vivamus. Ac tortor dignissim convallis aenean et tortor
+                        at risus
+                        viverra
+                    </p>
+                </div>
+                <div class="footer_main-block col-12 col-sm-6 col-md-auto">
+                    <h4 class="footer_main-block_title">Contacts</h4>
+                    <div class="group-wrapper d-flex justify-content-center">
+                        <i class="icon-call icon"></i>
+                        <div class="group d-flex flex-column">
+                            <a class="link" href="tel:+13136453395">044 - 2436 4343</a>
+                            <a class="link" href="tel:+14699702609">044 - 2436 4344</a>
+                            <a class="link" href="tel:+14699702609">044 - 2433 5897</a>
+                        </div>
+                    </div>
+                    <div class="group-wrapper d-flex justify-content-center">
+                        <i class="icon-location icon"></i>
+                        <div style="font-size: 16px;" class="group d-flex flex-column">
+                            <span>R.M.TOWERS,</span>
+                            <span> No. 108, Chamiers,</span>
+                            <span>Chennai - 600 018</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_main-block col-12 col-sm-6 col-md-auto">
+                    <h4 class="footer_main-block_title">Company</h4>
+                    <ul class="footer_main-block_nav">
+                        <li class="list-item">
+                            <a class="link d-inline-flex align-items-center" href="about.html"> About </a>
+                        </li>
+                        <li class="list-item">
+                            <a class="link d-inline-flex align-items-center" href="services.html"> Services </a>
+                        </li>
+                        <li class="list-item">
+                            <a class="link d-inline-flex align-items-center" href="projects.html"> Projects </a>
+                        </li>
+                        <!-- <li class="list-item">
+                                <a class="link d-inline-flex align-items-center" href="blog.html"> Blog </a>
+                            </li> -->
+                    </ul>
+                </div>
+                <div class="footer_main-block col-12 col-md-auto">
+                    <h4 class="footer_main-block_title">Quotes of the day</h4>
+                    <p class="footer_main-block_subtitle footer_main-block_subtitle--newsletter">
+                        <span style="font-family: Archivo,sans-serif;
+                            font-weight: 900;
+                            color: #ffc631">“ </span>We shape our buildings;
+                    </p>
+                    <p class="footer_main-block_subtitle footer_main-block_subtitle--newsletter">
+                        thereafter, they shape us.<span style="font-family: Archivo,sans-serif;
+                            font-weight: 900;
+                            color: #ffc631">” </span>
+                    </p>
+                    <!-- <form class="footer_main-block_form d-flex flex-wrap flex-sm-nowrap" data-type="newsletter"
+                            action="#" method="POST" name="newsletterForm" id="newsletterForm">
+                            <input class="field required" name="newsletterEmail" id="newsletterEmail" type="text"
+                                placeholder="Email" data-type="email" />
+                            <button class="btn btn--submit btn--static" type="submit">Subscribe</button>
+                        </form> -->
+                </div>
+            </div>
+            <div
+                class="footer_secondary col-12 d-flex flex-wrap align-items-center justify-content-center justify-content-md-between">
+                <p class="footer_secondary-copyright">
+                    <!-- <span>Merkulove &copy; RMC Construction Template</span> -->
+                    <span>All rights reserved Copyrights <span id="currentYear"></span></span>
+                </p>
+                <ul class="socials d-flex align-items-center justify-content-start socials--alt">
+                    <li class="socials_item">
+                        <a class="socials_item-link" href="#" target="_blank" rel="noopener noreferrer">
+                            <i class="icon-facebook"></i>
+                        </a>
+                    </li>
+                    <li class="socials_item">
+                        <a class="socials_item-link" href="#" target="_blank" rel="noopener noreferrer">
+                            <i class="icon-instagram"></i>
+                        </a>
+                    </li>
+                    <li class="socials_item">
+                        <a class="socials_item-link" href="#" target="_blank" rel="noopener noreferrer">
+                            <i class="icon-twitter"></i>
+                        </a>
+                    </li>
+                    <li class="socials_item">
+                        <a class="socials_item-link" href="#" target="_blank" rel="noopener noreferrer">
+                            <i class="icon-whatsapp"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <button id="scrollToTop" type="button">
+        <i class="icon icon-arrow_right"></i>
+    </button>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="js/common.min.js"></script>
+    <script>
+        
+        // email-js
+        (function () {
+            emailjs.init("LDfKEfglmPg_4A63x");
+        })();
+
+        function validate() {
+            // let loader = document.querySelector(".loader");
+            let name = document.querySelector(".username");
+            let email = document.querySelector(".email");
+            let num = document.querySelector(".number");
+            let msg = document.querySelector(".message");
+            let btn = document.querySelector(".submit");
+
+            btn.addEventListener("click", (e) => {
+                e.preventDefault();
+                if (
+                    name.value == "" ||
+                    email.value == "" ||
+                    num.value == "" ||
+                    msg.value == ""
+                ) {
+                    emptyerror();
+                } else {
+                    // loader.style.display = "flex";
+                    sendmail(name.value, email.value, num.value, msg.value);
+                    success();
+                    // loader.style.display = "none";
+                }
+            });
+        }
+        validate();
+
+        function sendmail(name, email, num, msg) {
+            emailjs.send("service_vue5k1n", "template_nhmlskg", {
+                user: name,
+                mail: email,
+                phone: num,
+                message: msg,
+            });
+        }
+
+
+
+        function emptyerror() {
+            Swal.fire({
+                icon: "error",
+                title: "Oops...",
+                text: "Fields cannot be empty!",
+            });
+        }
+
+        function error() {
+            Swal.fire({
+                icon: "error",
+                title: "Oops...",
+                text: "Something went wrong!",
+            });
+        }
+
+        function success() {
+            Swal.fire({
+                icon: "success",
+                title: "Success...",
+                text: "Successfully sent message",
+            });
+        }
+
+    </script>
+</body>
+
 </html>
