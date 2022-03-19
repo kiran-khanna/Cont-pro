@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Our projects | RMC Construction</title>
+        <link rel="stylesheet preload" as="style" href="css/preload.min.css" />
+        <link rel="stylesheet preload" as="style" href="css/libs.min.css" />
+        <link rel="shortcut icon" href="/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Montserrat:wght@100&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="css/gallery-masonry.min.css" />
+        <link rel="stylesheet" href="css/projects.min.css" />
+
+        <style>
+            @media screen and (max-width:768px) {
+                .gallery_filters-filter{
+                    font-size: 13px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header class="header primary-bg" data-page="projects">
+            <div class="header_navbar">
+                <div class="container d-flex flex-wrap flex-lg-nowrap align-items-center justify-content-between">
+                    <a class="brand d-inline-flex align-items-center justify-content-center" href="index.html">
+                    <img src="/img/home/Logos/RMCWHite.png" alt="rmc-logo" height="50px"><span style="margin-top: 12px;
+                        margin-left: 14px;
+                        width: 300px;
+                        font-size: 16px;
+                        font-weight: 100;">RM Constructions<p style="
+                        width: 300px;
+                        font-size: 15px;
+                        font-family: 'Lato', sans-serif;
+font-family: 'Montserrat', sans-serif;">Builders & Promoters</p></span>
+                </a>
+                </a>
+                    <nav class="header_navbar-nav">
+                        <ul class="header_navbar-nav_list">
+                            <li class="list-item">
+                                <a class="link link--single" href="index.html" data-page="home">Home</a>
+                                <!-- <button class="dropdown-trigger d-inline-flex align-items-center">
+                                    Home <i class="icon-chevron_right icon"></i>
+                                </button> -->
+                                <!-- <div class="dropdown-content">
+                                    <a class="link link--single" href="index.html" data-page="home">Home</a> -->
+                                    <!-- <a class="link link--single" href="index2.html" data-page="home2">Home 2</a> -->
+                                <!-- </div> -->
+                            </li>
+                            <li class="list-item">
+                                <a class="link link--single" href="about.html" data-page="about">About</a>
+                            </li>
+                            <li class="list-item">
+                                <a class="link link--single" href="services.html" data-page="services">Services</a>
+                                <!-- <button class="dropdown-trigger d-inline-flex align-items-center">
+                                    Services <i class="icon-chevron_right icon"></i>
+                                </button> -->
+                                <!-- <div class="dropdown-content"> -->
+                                    <!-- <a class="link link--single" href="services.html" data-page="services">Services</a> -->
+                                    <!-- <a class="link link--single" href="single-service.html" data-page="single-service">Single service</a>
+                                    <a class="link link--single" href="team.html" data-page="team">Team</a> -->
+                                <!-- </div> -->
+                            </li>
+                            <li class="list-item">
+                                <a class="link link--single" href="projects.html" data-page="projects">Projects</a>
+                                <!-- <button class="dropdown-trigger d-inline-flex align-items-center">
+                                    Projects <i class="icon-chevron_right icon"></i>
+                                </button> -->
+                                <!-- <div class="dropdown-content"> -->
+                                    <!-- <a class="link link--single" href="projects.html" data-page="projects">Projects</a> -->
+                                    <!-- <a class="link link--single" href="projects2.html" data-page="projects2">Projects 2</a>
+                                    <a class="link link--single" href="single-project.html" data-page="single-project">Single project</a> -->
+                                <!-- </div> -->
+                            </li>
+                            <!-- <li class="list-item">
+                                <button class="dropdown-trigger d-inline-flex align-items-center">
+                                    Blog <i class="icon-chevron_right icon"></i>
+                                </button>
+                                <div class="dropdown-content">
+                                    <a class="link link--single" href="blog.html" data-page="blog">Blog</a>
+                                    <a class="link link--single" href="blog2.html" data-page="blog2">Blog 2</a>
+                                    <a class="link link--single" href="single-post.html" data-page="single-post">Single post</a>
+                                </div>
+                            </li> -->
+                            <li class="list-item">
+                                <a class="link link--single" href="contacts.html" data-page="contacts">Contact</a>
+                                <!-- <button class="dropdown-trigger d-inline-flex align-items-center">
+                                    Contacts <i class="icon-chevron_right icon"></i>
+                                </button> -->
+                                <!-- <div class="dropdown-content">
+                                    <a class="link link--single" href="contacts.html" data-page="contacts">Contacts</a>
+                                    <a class="link link--single" href="contacts2.html" data-page="contacts2">Contacts 2</a>
+                                </div> -->
+                            </li>
+                            <!-- <li class="list-item">
+                                <button class="dropdown-trigger d-inline-flex align-items-center">
+                                    Pages <i class="icon-chevron_right icon"></i>
+                                </button>
+                                <div class="dropdown-content">
+                                    <a class="link link--single" href="faq.html" data-page="faq">FAQ</a>
+                                    <a class="link link--single" href="gallery-grid.html" data-page="gallery-grid">Gallery grid</a>
+                                    <a class="link link--single" href="gallery-masonry.html" data-page="gallery-masonry">Gallery masonry</a>
+                                    <a class="link link--single" href="404.html" data-page="404">404</a>
+                                </div>
+                            </li> -->
+                        </ul>
+                    </nav>
+                    <button class="hamburger">
+                        <span class="line line--short"></span>
+                        <span class="line"></span>
+                        <span class="line line--short"></span>
+                        <span class="line"></span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="header_extension">
+                <div class="container">
+                    <div class="section_header">
+                        <span class="subtitle subtitle--extended">Building communities</span>
+                        <h1 class="title">Contractors</h1>
+                        <ul class="breadcrumbs d-flex align-items-center">
+                            <li class="breadcrumbs_item">
+                                <a href="index.html">Home</a>
+                            </li>
+                            <li class="breadcrumbs_item breadcrumbs_item--current">
+                                <span>Projects</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <picture>
+                    <source data-srcset="img/home/plan--resize.png" srcset="img/home/plan--resize.png" type="image/png" data-role="deco" />
+                    <img class="lazy plan" data-src="img/home/plan--resize.png" src="img/home/plan--resize.png" alt="media" data-role="deco" />
+                </picture>
+            </div>
+        </header>
+        <!-- PROJECTS CONTENT START  -->
+        <main class="gallery section">
+            <div class="container">
+                <!-- <ul class="gallery_filters d-flex flex-wrap align-items-baseline justify-content-md-between mb-5">
+                    <li class="list-item">
+                        <a data-target="all" class="gallery_filters-filter current"style="color: black;" href="#">All</a>
+                    </li>
+                    <li class="list-item">
+                        <a data-target="residential" class="gallery_filters-filter"style="color: black;" href="#">Residential</a>
+                    </li>
+                    <li class="list-item">
+                        <a data-target="commercial" class="gallery_filters-filter" style="color: black;"href="#">Commercial</a>
+                    </li>
+                    <li class="list-item">
+                        <a data-target="institutions" class="gallery_filters-filter" style="color: black;" href="#">Institutions</a>
+                    </li>
+                </ul> -->
+                <div class="gallery_masonry row g-0">
+                    <!-- 10 -->
+                   <figure class="gallery_masonry-item projects_list- col-md-6" data-groups='["residential"]'>
+                       <div class="projects_list-item" data-order="10">
+                           <div class="wrapper d-flex flex-wrap justify-content-between">
+                               <div class="img-wrapper" data-aos="zoom-in-right" data-aos-duration="550" data-aos-once="true">
+                                   <picture>
+                                       <source
+                                           data-srcset="/img/home/home-project/kodai.jpg"
+                                           srcset="/img/home/home-project/kodai.jpg"
+                                           type="image/jpg"
+                                       />
+                                       <img
+                                           class="projects_list-item_img lazy"
+                                           data-src="/img/home/home-project/kodai.jpg"
+                                           src="/img/home/home-project/kodai.jpg"
+                                           alt="RMC Construction @ "
+                                       />
+                                   </picture>
+                               </div>
+                               <div class="text-wrapper d-flex flex-column justify-content-between">
+                                   <h3 class="projects_list-item_title" data-aos="fade-in" data-aos-duration="500" data-aos-once="true">
+                                       RMC Construction @ Kodaikanal
+                                       <span
+                                           class="divider divider--line"
+                                           data-aos="slide-right"
+                                           data-aos-duration="500"
+                                           data-aos-once="true"
+                                       ></span>
+                                   </h3>
+                                   <div class="projects_list-item_info d-flex flex-wrap align-items-center justify-content-between">
+                                       <span
+                                           class="location d-flex align-items-center"
+                                           data-aos="fade-in"
+                                           data-aos-duration="500"
+                                           data-aos-delay="50"
+                                           data-aos-once="true"
+                                       >
+                                           <i class="icon-location icon"></i>
+                                           Naidupuram, Kodaikanal, Tamil Nadu
+                                       </span>
+                                       <a
+                                           class="link link-arrow"
+                                           href="single-project.html?name=project10"
+                                           data-aos="fade-in"
+                                           data-aos-duration="500"
+                                           data-aos-delay="50"
+                                           data-aos-once="true"
+                                       >
+                                           Details
+                                           <i class="icon-arrow_right"></i>
+                                       </a>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                   </figure>
+                    <!-- 13 -->
+                    <figure class="gallery_masonry-item projects_list- col-md-6" data-groups='["institutions"]'>
+                       <div class="projects_list-item" data-order="13">
+                           <div class="wrapper d-flex flex-wrap justify-content-between">
+                               <div class="img-wrapper" data-aos="zoom-in-right" data-aos-duration="550" data-aos-once="true">
+                                   <picture>
+                                       <source
+                                           data-srcset="/img/home/home-project/vels-nursing.jpg"
+                                           srcset="/img/home/home-project/vels-nursing.jpg"
+                                           type="image/jpg"
+                                       />
+                                       <img
+                                           class="projects_list-item_img lazy"
+                                           data-src="/img/home/home-project/vels-nursing.jpg"
+                                           src="/img/home/home-project/vels-nursing.jpg"
+                                           alt="RMC Construction @ "
+                                       />
+                                   </picture>
+                               </div>
+                               <div class="text-wrapper d-flex flex-column justify-content-between">
+                                   <h3 class="projects_list-item_title" data-aos="fade-in" data-aos-duration="500" data-aos-once="true">
+                                       RMC Construction @ Periyapalayam
+                                       <span
+                                           class="divider divider--line"
+                                           data-aos="slide-right"
+                                           data-aos-duration="500"
+                                           data-aos-once="true"
+                                       ></span>
+                                   </h3>
+                                   <div class="projects_list-item_info d-flex flex-wrap align-items-center justify-content-between">
+                                       <span
+                                           class="location d-flex align-items-center"
+                                           data-aos="fade-in"
+                                           data-aos-duration="500"
+                                           data-aos-delay="50"
+                                           data-aos-once="true"
+                                       >
+                                           <i class="icon-location icon"></i>
+                                           Vels Medical College and Hospital, Periyapalayam
+                                       </span>
+                                       <a
+                                           class="link link-arrow"
+                                           href="single-project.html?name=project13"
+                                           data-aos="fade-in"
+                                           data-aos-duration="500"
+                                           data-aos-delay="50"
+                                           data-aos-once="true"
+                                       >
+                                           Details
+                                           <i class="icon-arrow_right"></i>
+                                       </a>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                   </figure>
+                     <!-- 17 -->
+                     <figure class="gallery_masonry-item projects_list- col-md-6" data-groups='["institutions"]'>
+                       <div class="projects_list-item" data-order="17">
+                           <div class="wrapper d-flex flex-wrap justify-content-between">
+                               <div class="img-wrapper" data-aos="zoom-in-right" data-aos-duration="550" data-aos-once="true">
+                                   <picture>
+                                       <source
+                                           data-srcset="/img/home/home-project/anand.jpeg"
+                                           srcset="/img/home/home-project/anand.jpeg"
+                                           type="image/jpg"
+                                       />
+                                       <img
+                                           class="projects_list-item_img lazy"
+                                           data-src="/img/home/home-project/anand.jpeg"
+                                           src="/img/home/home-project/anand.jpeg"
+                                           alt="RMC Construction @ "
+                                       />
+                                   </picture>
+                               </div>
+                               <div class="text-wrapper d-flex flex-column justify-content-between">
+                                   <h3 class="projects_list-item_title" data-aos="fade-in" data-aos-duration="500" data-aos-once="true">
+                                       RMC Construction @ Porur
+                                       <span
+                                           class="divider divider--line"
+                                           data-aos="slide-right"
+                                           data-aos-duration="500"
+                                           data-aos-once="true"
+                                       ></span>
+                                   </h3>
+                                   <div class="projects_list-item_info d-flex flex-wrap align-items-center justify-content-between">
+                                       <span
+                                           class="location d-flex align-items-center"
+                                           data-aos="fade-in"
+                                           data-aos-duration="500"
+                                           data-aos-delay="50"
+                                           data-aos-once="true"
+                                       >
+                                           <i class="icon-location icon"></i>
+                                           Anand School, Mugalivakkam Road, Porur, Chennai
+                                       </span>
+                                       <a
+                                           class="link link-arrow"
+                                           href="single-project.html?name=project17"
+                                           data-aos="fade-in"
+                                           data-aos-duration="500"
+                                           data-aos-delay="50"
+                                           data-aos-once="true"
+                                       >
+                                           Details
+                                           <i class="icon-arrow_right"></i>
+                                       </a>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                   </figure>
+                       <!-- 19 -->
+                       <figure class="gallery_masonry-item projects_list- col-md-6" data-groups='["residential"]'>
+                           <div class="projects_list-item" data-order="19">
+                               <div class="wrapper d-flex flex-wrap justify-content-between">
+                                   <div class="img-wrapper" data-aos="zoom-in-right" data-aos-duration="550" data-aos-once="true">
+                                       <picture>
+                                           <source
+                                               data-srcset="/img/home/common.jpg"
+                                               srcset="/img/home/common.jpg"
+                                               type="image/jpg"
+                                           />
+                                           <img
+                                               class="projects_list-item_img lazy"
+                                               data-src="/img/home/common.jpg"
+                                               src="/img/home/common.jpg"
+                                               alt="RMC Construction @ "
+                                           />
+                                       </picture>
+                                   </div>
+                                   <div class="text-wrapper d-flex flex-column justify-content-between">
+                                       <h3 class="projects_list-item_title" data-aos="fade-in" data-aos-duration="500" data-aos-once="true">
+                                           RMC Construction @ Greenways Rd
+                                           <span
+                                               class="divider divider--line"
+                                               data-aos="slide-right"
+                                               data-aos-duration="500"
+                                               data-aos-once="true"
+                                           ></span>
+                                       </h3>
+                                       <div class="projects_list-item_info d-flex flex-wrap align-items-center justify-content-between">
+                                           <span
+                                               class="location d-flex align-items-center"
+                                               data-aos="fade-in"
+                                               data-aos-duration="500"
+                                               data-aos-delay="50"
+                                               data-aos-once="true"
+                                           >
+                                               <i class="icon-location icon"></i>
+                                              Fathima Convent & Hostel, Greenways Rd, Chennai
+                                           </span>
+                                           <a
+                                               class="link link-arrow"
+                                               href="single-project.html?name=project19"
+                                               data-aos="fade-in"
+                                               data-aos-duration="500"
+                                               data-aos-delay="50"
+                                               data-aos-once="true"
+                                           >
+                                               Details
+                                               <i class="icon-arrow_right"></i>
+                                           </a>
+                                       </div>
+                                   </div>
+                               </div>
+                           </div>
+                       </figure>
+                     <!-- 21 -->
+                     <figure class="gallery_masonry-item projects_list- col-md-6" data-groups='["institutions"]'>
+                       <div class="projects_list-item" data-order="21">
+                           <div class="wrapper d-flex flex-wrap justify-content-between">
+                               <div class="img-wrapper" data-aos="zoom-in-right" data-aos-duration="550" data-aos-once="true">
+                                   <picture>
+                                       <source
+                                           data-srcset="/img/home/common.jpg"
+                                           srcset="/img/home/common.jpg"
+                                           type="image/jpg"
+                                       />
+                                       <img
+                                           class="projects_list-item_img lazy"
+                                           data-src="/img/home/common.jpg"
+                                           src="/img/home/common.jpg"
+                                           alt="RMC Construction @ "
+                                       />
+                                   </picture>
+                               </div>
+                               <div class="text-wrapper d-flex flex-column justify-content-between">
+                                   <h3 class="projects_list-item_title" data-aos="fade-in" data-aos-duration="500" data-aos-once="true">
+                                       RMC Construction @ Andhra Pradesh
+                                       <span
+                                           class="divider divider--line"
+                                           data-aos="slide-right"
+                                           data-aos-duration="500"
+                                           data-aos-once="true"
+                                       ></span>
+                                   </h3>
+                                   <div class="projects_list-item_info d-flex flex-wrap align-items-center justify-content-between">
+                                       <span
+                                           class="location d-flex align-items-center"
+                                           data-aos="fade-in"
+                                           data-aos-duration="500"
+                                           data-aos-delay="50"
+                                           data-aos-once="true"
+                                       >
+                                           <i class="icon-location icon"></i>
+                                           Little Flower School, Nagari, Andhra Pradesh
+                                       </span>
+                                       <a
+                                           class="link link-arrow"
+                                           href="single-project.html?name=project21"
+                                           data-aos="fade-in"
+                                           data-aos-duration="500"
+                                           data-aos-delay="50"
+                                           data-aos-once="true"
+                                       >
+                                           Details
+                                           <i class="icon-arrow_right"></i>
+                                       </a>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                   </figure>
+                    <!-- 30 -->
+                    <figure class="gallery_masonry-item projects_list- col-md-6" data-groups='["residential"]'>
+                       <div class="projects_list-item" data-order="30">
+                           <div class="wrapper d-flex flex-wrap justify-content-between">
+                               <div class="img-wrapper" data-aos="zoom-in-right" data-aos-duration="550" data-aos-once="true">
+                                   <picture>
+                                       <source
+                                           data-srcset="/img/home/common.jpg"
+                                           srcset="/img/home/common.jpg"
+                                           type="image/jpg"
+                                       />
+                                       <img
+                                           class="projects_list-item_img lazy"
+                                           data-src="/img/home/common.jpg"
+                                           src="/img/home/common.jpg"
+                                           alt="RMC Construction @ "
+                                       />
+                                   </picture>
+                               </div>
+                               <div class="text-wrapper d-flex flex-column justify-content-between">
+                                   <h3 class="projects_list-item_title" data-aos="fade-in" data-aos-duration="500" data-aos-once="true">
+                                       RMC Construction @ Chennai
+                                       <span
+                                           class="divider divider--line"
+                                           data-aos="slide-right"
+                                           data-aos-duration="500"
+                                           data-aos-once="true"
+                                       ></span>
+                                   </h3>
+                                   <div class="projects_list-item_info d-flex flex-wrap align-items-center justify-content-between">
+                                       <span
+                                           class="location d-flex align-items-center"
+                                           data-aos="fade-in"
+                                           data-aos-duration="500"
+                                           data-aos-delay="50"
+                                           data-aos-once="true"
+                                       >
+                                           <i class="icon-location icon"></i>
+                                           VGP, Chennai
+                                       </span>
+                                       <a
+                                           class="link link-arrow"
+                                           href="single-project.html?name=project30"
+                                           data-aos="fade-in"
+                                           data-aos-duration="500"
+                                           data-aos-delay="50"
+                                           data-aos-once="true"
+                                       >
+                                           Details
+                                           <i class="icon-arrow_right"></i>
+                                       </a>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                   </figure>
+               </div>
+            </div>
+        </main>
+        <!-- PROJECTS CONTENT END  -->
+        <footer class="footer primary-bg">
+            <div class="container">
+                <div class="footer_main d-flex flex-wrap justify-content-md-between col-12">
+                    <div class="footer_main-block col-sm-12 col-xl-auto">
+                        <a class="brand d-inline-flex align-items-center justify-content-center" href="index.html">
+                            <a class="brand d-inline-flex align-items-center justify-content-center" href="index.html">
+                    <img src="/img/home/Logos/RMCWHite.png" alt="rmc-logo" height="50px"><span style="margin-top: 12px;
+                        margin-left: 14px;
+                        width: 300px;
+                        font-size: 16px;
+                        font-weight: 100;">RM Constructions<p style="
+                        width: 300px;
+                        font-size: 15px;
+                        font-family: 'Lato', sans-serif;
+font-family: 'Montserrat', sans-serif;">Builders & Promoters</p></span>
+                </a>
+                        </a>
+                        <p class="footer_main-block_subtitle footer_main-block_subtitle--brand">
+                            What we build today should last for generations to come. We should embrace the purpose of the construction and live with its value.
+                        </p>
+                    </div>
+                    <div class="footer_main-block col-12 col-sm-6 col-md-auto">
+                        <h4 class="footer_main-block_title">Contacts</h4>
+                        <div class="group-wrapper d-flex justify-content-center">
+                            <i class="icon-call icon"></i>
+                            <div class="group d-flex flex-column">
+                                <a class="link" href="tel:+13136453395">044 - 2436 4343</a>
+                                <a class="link" href="tel:+14699702609">044 - 2436 4344</a>
+                                <a class="link" href="tel:+14699702609">044 - 2433 5897</a>
+                            </div>
+                        </div>
+                        <div class="group-wrapper d-flex justify-content-center">
+                            <i class="icon-location icon"></i>
+                            <div style="font-size: 16px;" class="group d-flex flex-column">
+                                <span>R.M.TOWERS,</span>
+                                <span> No. 108, Chamiers,</span>
+                                <span>Chennai - 600 018</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer_main-block col-12 col-sm-6 col-md-auto">
+                        <h4 class="footer_main-block_title">Company</h4>
+                        <ul class="footer_main-block_nav">
+                            <li class="list-item">
+                                <a class="link d-inline-flex align-items-center" href="about.html"> About </a>
+                            </li>
+                            <li class="list-item">
+                                <a class="link d-inline-flex align-items-center" href="services.html"> Services </a>
+                            </li>
+                            <li class="list-item">
+                                <a class="link d-inline-flex align-items-center" href="projects.html"> Projects </a>
+                            </li>
+                            <!-- <li class="list-item">
+                                <a class="link d-inline-flex align-items-center" href="blog.html"> Blog </a>
+                            </li> -->
+                        </ul>
+                    </div>
+                    <div class="footer_main-block col-12 col-md-auto">
+                        <h4 class="footer_main-block_title">Our Philosophy</h4>
+                        <p class="footer_main-block_subtitle footer_main-block_subtitle--newsletter">
+                            <span style="font-family: Archivo,sans-serif;
+                            font-weight: 900;
+                            color: #ffc631">“ </span>We shape our buildings;
+                        </p>
+                        <p class="footer_main-block_subtitle footer_main-block_subtitle--newsletter">
+                            thereafter, they shape us.<span style="font-family: Archivo,sans-serif;
+                            font-weight: 900;
+                            color: #ffc631">” </span>
+                        </p>
+                        <!-- <form class="footer_main-block_form d-flex flex-wrap flex-sm-nowrap" data-type="newsletter"
+                            action="#" method="POST" name="newsletterForm" id="newsletterForm">
+                            <input class="field required" name="newsletterEmail" id="newsletterEmail" type="text"
+                                placeholder="Email" data-type="email" />
+                            <button class="btn btn--submit btn--static" type="submit">Subscribe</button>
+                        </form> -->
+                    </div>
+                </div>
+                <div
+                    class="footer_secondary col-12 d-flex flex-wrap align-items-center justify-content-center justify-content-md-between">
+                    <p class="footer_secondary-copyright">
+                        <!-- <span>Merkulove &copy; RMC Construction Template</span> -->
+                        <span>All rights reserved Copyrights <span id="currentYear"></span></span>
+                    </p>
+                    <ul class="socials d-flex align-items-center justify-content-start socials--alt">
+                        <li class="socials_item">
+                            <a class="socials_item-link" href="#" target="_blank" rel="noopener noreferrer">
+                                <i class="icon-facebook"></i>
+                            </a>
+                        </li>
+                        <li class="socials_item">
+                            <a class="socials_item-link" href="#" target="_blank" rel="noopener noreferrer">
+                                <i class="icon-instagram"></i>
+                            </a>
+                        </li>
+                        <li class="socials_item">
+                            <a class="socials_item-link" href="#" target="_blank" rel="noopener noreferrer">
+                                <i class="icon-twitter"></i>
+                            </a>
+                        </li>
+                        <li class="socials_item">
+                            <a class="socials_item-link" href="#" target="_blank" rel="noopener noreferrer">
+                                <i class="icon-whatsapp"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <button id="scrollToTop" type="button">
+            <i class="icon icon-arrow_right"></i>
+        </button>
+        <script src="js/common.min.js"></script>
+    </body>
+</html>
