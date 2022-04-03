@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <title>Gallery Grid | RMC Construction</title>
+        <title>Interior | RMC Construction</title>
         <link rel="stylesheet preload" as="style" href="css/preload.min.css" />
         <link rel="stylesheet preload" as="style" href="css/libs.min.css" />
         <link rel="shortcut icon" href="/favicon.png">
@@ -13,6 +13,24 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Montserrat:wght@100&display=swap"
         rel="stylesheet">
         <link rel="stylesheet" href="css/gallery-grid.min.css" />
+        <style>
+            .dad-image{
+                border-radius: 50%;
+                border:2px solid #ffc631; 
+                position: fixed;
+                margin-top: -24px;
+                margin-left: 10px;
+                width:70px;
+                 height:70px;
+            }
+            @media screen and (max-width:768px) {
+                .dad-image{
+                    margin-top: -270px;
+                    right: 0;
+                    margin-right: 20px;
+                }
+            }
+        </style>
     </head>
     <body>
         <header class="header primary-bg" data-page="gallery-grid">
@@ -24,7 +42,7 @@
                             margin-left: 15px;
                             width: 150px;
                             font-size: 18px;
-                            font-weight: 300;">RM Constructions
+                            font-weight: 300;font-family: 'Times New Roman', Times, serif;"">RM Constructions
                             <p style="
                             width: 200px;
                             font-size: 16px;
@@ -89,6 +107,9 @@
                                     <a class="link link--single" href="contacts2.html" data-page="contacts2">Contacts 2</a>
                                 </div> -->
                             </li>
+                            <div>
+                                <a href="/about.html"><img class="dad-image" src="./img/dad.jpg"></a>
+                            </div>
                             <!-- <li class="list-item">
                                 <button class="dropdown-trigger d-inline-flex align-items-center">
                                     Pages <i class="icon-chevron_right icon"></i>
@@ -115,13 +136,13 @@
                 <div class="container">
                     <div class="section_header">
                         <span class="subtitle subtitle--extended">Project detail</span>
-                        <h1 class="title">Gallery Grid</h1>
+                        <h1 class="title">Interior</h1>
                         <ul class="breadcrumbs d-flex align-items-center">
                             <li class="breadcrumbs_item">
                                 <a href="index.html">Home</a>
                             </li>
                             <li class="breadcrumbs_item breadcrumbs_item--current">
-                                <span>Gallery</span>
+                                <span>Interior</span>
                             </li>
                         </ul>
                     </div>
@@ -749,7 +770,7 @@
                                 margin-left: 14px;
                                 width: 150px;
                                 font-size: 18px;
-                                font-weight: 100;">RM Constructions<p style="
+                                font-weight: 100;font-family: 'Times New Roman', Times, serif;"">RM Constructions<p style="
                                 width: 175px;
                                 font-size: 16px;
                                 font-family: 'Lato', sans-serif;
