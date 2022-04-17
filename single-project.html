@@ -15,7 +15,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="css/single-project.min.css" />
     <script>
-        let headerSection, articleSection, asideSection, buildingTable;
+        let headerSection, articleSection, asideSection, buildingTable, slideIndex = 0;
         const data = {
             "project1": {
                 title: "Our Projects",
@@ -678,11 +678,16 @@
             },
             "project13": {
                 title: "Our Projects",
-                sourceImage:
-                    "/img/home/home-project/vels-nursing.jpg",
-                imgURL:
-                    "/img/home/home-project/vels-nursing.jpg",
-                                descriptions: [" "],
+                imgSlides: [
+                    "/img/home/slider/vels/mess-block.jpg",
+                    "/img/home/slider/vels/nursing.jpg",
+                    "/img/home/slider/vels/principal-quaters.jpg",
+                    "/img/home/slider/vels/resident-hostel.jpg",
+                    "/img/home/slider/vels/teaching-quaters.jpg",
+                    "/img/home/slider/vels/vels-nursing.jpg"
+                ],
+                descriptions: [" "],
+                imgType: "slides",
 
                 items: [],
                 details: {
@@ -812,12 +817,26 @@
             },
             "project17": {
                 title: "Our Projects",
-                sourceImage:
-                    "<div class='slideshow-container'><div class='mySlides fade'><div class='numbertext'>1 / 3</div><img src='./img/home/slider/anand/1.jpeg' style='width:100%''><div class='text'>Caption Text</div></div><div class='mySlides fade'><div class='numbertext'>2 / 3</div><img src='./img/home/slider/anand/1.jpeg' style='width:100%''><div class='text'>Caption Two</div></div><div class='mySlides fade'><div class='numbertext'>3 / 3</div><img src='./img/home/slider/anand/1.jpeg' style='width:100%''><div class='text'>Caption Three</div></div></div>",
-                imgURL:
-                "<div class='slideshow-container'><div class='mySlides fade'><div class='numbertext'>1 / 3</div><img src='./img/home/slider/anand/1.jpeg' style='width:100%''><div class='text'>Caption Text</div></div><div class='mySlides fade'><div class='numbertext'>2 / 3</div><img src='./img/home/slider/anand/1.jpeg' style='width:100%''><div class='text'>Caption Two</div></div><div class='mySlides fade'><div class='numbertext'>3 / 3</div><img src='./img/home/slider/anand/1.jpeg' style='width:100%''><div class='text'>Caption Three</div></div></div>",
-                              descriptions: [" "],
+                imgSlides: [
+                    "/img/home/slider/anand/1.jpeg",
+                    "/img/home/slider/anand/2.jpeg",
+                    // "/img/home/slider/anand/3.jpeg",
+                    "/img/home/slider/anand/4.jpeg",
+                    "/img/home/slider/anand/5.jpeg",
+                    "/img/home/slider/anand/6.jpeg",
+                    "/img/home/slider/anand/7.jpeg",
+                    "/img/home/slider/anand/8.jpeg",
+                    "/img/home/slider/anand/9.jpeg",
+                    "/img/home/slider/anand/10.jpeg",
+                    "/img/home/slider/anand/11.jpeg",
+                    "/img/home/slider/anand/12.jpeg",
+                    // "/img/home/slider/anand/13.jpeg",
+                    "/img/home/slider/anand/14.jpeg",
+                    "/img/home/slider/anand/15.jpeg",
+                ],
+                descriptions: [" "],
 
+                imgType: "slides",
                 items: [],
                 details: {
                     location: "Porur",
@@ -1744,6 +1763,20 @@
             buildingTable.innerHTML = tableHTML;
         }
 
+        function renderSlides(images) {
+            const pictureEle = articleSection.querySelector("picture");
+            let slideHTML = `<div class="slideshow-container">`;
+            for (imgURL of images) {
+                slideHTML += ` <div class="custom-slide"><img src="${imgURL}"></div>`;
+            }
+
+            slideHTML += `<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                          </div>`;
+            pictureEle.innerHTML = slideHTML;
+            console.log(pictureEle)
+        }
+
         function init() {
             headerSection = document.querySelector(".header_extension");
             articleSection = document.querySelector(".about_article");
@@ -1758,12 +1791,32 @@
             if (project !== undefined) {
                 renderTitle(project.title);
                 renderDescription(project.descriptions);
-                renderSource(project.sourceImage);
-                renderImage(project.imgURL);
+                if (project.imgType === "slides") {
+                    renderSlides(project.imgSlides);
+                    showSlides(0);
+                }
+                else {
+                    renderSource(project.sourceImage);
+                    renderImage(project.imgURL);
+                }
                 renderList(project.items);
                 renderDetails(project.details);
                 project.tableItems && renderTable(project.tableItems);
             }
+        }
+
+        function plusSlides(n) {
+                showSlides(slideIndex += n);
+        }
+
+        function showSlides(n) {
+            let x = Array.from(document.getElementsByClassName("custom-slide"));
+            if (n >= x.length) { slideIndex = 0 }
+            else if (n < 0) { slideIndex = x.length - 1 }
+            for (let i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            x[slideIndex].style.display = "block";
         }
 
     </script>
@@ -1795,6 +1848,49 @@
             text-align: left;
             background-color: #001F3F;
             color: white;
+        }
+
+        /* Slideshow container */
+        .slideshow-container {
+        max-width: 700px;
+        position: relative;
+        margin: auto;
+        }
+
+        .custom-slide img {
+            max-width: 100%;
+        }
+
+        /* Next & previous buttons */
+        .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -22px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+        }
+
+        /* Position the "next button" to the right */
+        .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+        }
+
+        /* On hover, add a grey background color */
+        .prev:hover, .next:hover {
+        background-color: #f1f1f1;
+        color: black;
+        }
+
+        .custom-slide {
+            display: none;
         }
     </style>
 

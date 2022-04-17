@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Home | RM CONSTRUCTIONS</title>
+    <link rel="stylesheet preload" as="style" href="css/modal.css" />
     <link rel="stylesheet preload" as="style" href="css/preload.min.css" />
     <link rel="stylesheet preload" as="style" href="css/libs.min.css" />
     <link rel="shortcut icon" href="/favicon.png">
@@ -20,14 +21,24 @@
     <link rel="stylesheet" href="css/index.min.css" />
 
     <style>
-        .resp-name{
+        #staticBackdrop {
+            z-index: 100001;
+        }
+
+        #staticBackdrop .modal-header {
+            border-bottom: none;
+        }
+
+        .resp-name {
             font-size: 14px;
         }
+
         @media screen and (max-width:768px) {
-            .hero_container{
-                margin-top: 100px!important;
+            .hero_container {
+                margin-top: 100px !important;
             }
-            .resp-name{
+
+            .resp-name {
                 font-size: 11px;
             }
         }
@@ -214,7 +225,7 @@ font-weight: 600;">Builders & Flat Promoters</p>
                         Multi-Disciplined Engineering <span class="highlight">Solutions</span>
                     </h2>
                 </div>
-               
+
                 <ul class="services_list row g-0">
                     <li class="services_list-item col-12 col-md-6 col-xxl-6" data-aos="fade-up" data-order="1">
                         <div class="wrapper d-flex flex-column align-items-start justify-content-between">
@@ -245,7 +256,7 @@ font-weight: 600;">Builders & Flat Promoters</p>
                             </a>
                         </div>
                     </li>
-                   
+
                     <!-- <li class="services_list-item col-12 col-md-6 col-xxl-4" data-aos="fade-up" data-order="3">
                         <div class="wrapper d-flex flex-column align-items-start justify-content-between">
                             <span class="number">03</span>
@@ -293,7 +304,8 @@ font-weight: 600;">Builders & Flat Promoters</p>
                             <span class="number">05</span>
                             <h4 class="title">Real Estate</h4>
                             <p class="description">
-                                You can invest in real estate directly by purchasing a home, rental property or other property, or indirectly through a real estate investment trust (REIT).
+                                You can invest in real estate directly by purchasing a home, rental property or other
+                                property, or indirectly through a real estate investment trust (REIT).
                             </p>
                             <!-- <a class="link link-arrow" href="single-service.html">
                                 Details
@@ -728,16 +740,16 @@ font-weight: 600;">Builders & Flat Promoters</p>
                                 class="team_quote-author d-flex flex-wrap flex-sm-nowrap align-items-center justify-content-end justify-content-sm-between">
                                 <div class="wrapper d-flex align-items-center">
                                     <picture>
-                                        <source data-srcset="img/dad.jpg" srcset="img/dad.jpg"
-                                            type="image/webp" />
-                                        <img style="border-radius: 10%"class="team_quote-author_avatar lazy" data-src="img/dad.jpg"
-                                            src="img/dad.jpg" alt="R Maria Cyril" />
+                                        <source data-srcset="img/dad.jpg" srcset="img/dad.jpg" type="image/webp" />
+                                        <img style="border-radius: 10%" class="team_quote-author_avatar lazy"
+                                            data-src="img/dad.jpg" src="img/dad.jpg" alt="R Maria Cyril" />
                                     </picture>
                                     <div class="wrapper wrapper--info">
                                         <span class="team_quote-author_name" style="font-family: Archivo,sans-serif;
                                         font-weight: 700;
                                         color: #ffc631;">R Maria Cyril</span>
-                                        <span class="team_quote-author_profession resp-name">Founder, RMC Group of Companies,
+                                        <span class="team_quote-author_profession resp-name">Founder, RMC Group of
+                                            Companies,
                                             India.</span>
                                     </div>
                                 </div>
@@ -877,8 +889,7 @@ font-weight: 600;">Builders & Flat Promoters</p>
                                     <source data-srcset="img/home/gallery/anand.jpeg"
                                         srcset="img/home/gallery/vels-nursing.jpg" type="image/jpeg" />
                                     <img class="lazy" data-src="img/home/gallery/anand.jpeg"
-                                        src="img/home/gallery/anand.jpeg"
-                                        alt="Fresh Concept Construction Renovation" />
+                                        src="img/home/gallery/anand.jpeg" alt="Fresh Concept Construction Renovation" />
                                 </picture>
                             </div>
                             <div class="text-wrapper d-flex flex-column justify-content-end">
@@ -914,11 +925,10 @@ font-weight: 600;">Builders & Flat Promoters</p>
                             data-caption="Kodai House" data-role="gallery-link">
                             <div class="img-wrapper">
                                 <picture>
-                                    <source data-srcset="img/home/gallery/kodai.jpg"
-                                        srcset="img/home/gallery/kodai.jpg" type="image/jpg" />
+                                    <source data-srcset="img/home/gallery/kodai.jpg" srcset="img/home/gallery/kodai.jpg"
+                                        type="image/jpg" />
                                     <img class="lazy" data-src="img/home/gallery/kodai.jpg"
-                                        src="img/home/gallery/kodai.jpg"
-                                        alt="Fresh Concept Construction Renovation" />
+                                        src="img/home/gallery/kodai.jpg" alt="Fresh Concept Construction Renovation" />
                                 </picture>
                             </div>
                             <div class="text-wrapper d-flex flex-column justify-content-end">
@@ -1114,12 +1124,148 @@ font-weight: 600;">Builders & Flat Promoters</p>
             </div>
         </div>
     </footer>
+    <div class="hidden-elements">
+        <!-- Modal -->
+        <style>
+            .modal-content {
+                background-color: #001f3f !important;
+            }
+
+            .modal-body h2 {
+                font-size: 24px;
+                font-family: "Archivo", sans-serif;
+                font-weight: 400;
+                color: white;
+            }
+
+            .founder h3 {
+                color: #ffc631;
+                font-family: "Archivo", sans-serif;
+                font-weight: 400;
+                padding-top: 30px;
+            }
+
+            .founder p {
+                color: white;
+                font-size: 18px;
+            }
+
+            .btn-close {
+                background: url(./img/close_icon.svg);
+                margin-top: 1px!important;
+                margin-right: -13px;
+            }
+            
+            .modal-body {
+                border: 20px solid white;
+                border-top: 0;
+                padding-left: 40px;
+                padding-top: 50px;
+                padding-bottom: 0px;
+                padding-right: 0;
+            }
+
+            .modal-header {
+                background-color: white;
+                padding: 0.5rem 1rem;
+                padding-top: 0px;
+                border-top-left-radius: 0px;
+                border-top-right-radius: 0px;
+            }
+
+            .ceo {
+                display: flex;
+                margin-left: auto;
+                margin-top: -215px;
+            }
+
+            .rmc-log {
+                display: flex;
+                align-items: center;
+                margin-top: 50px;
+            }
+
+            .rmc-log p {
+                color: white;
+                font-size: 16px;
+                margin-top: 15px;
+            }
+
+            @media screen and (max-width:992px) {
+                .ceo {
+                    width: 100%;
+                }
+
+                .responsive-body {
+                    padding-right: 20px;
+                }
+
+                .modal-body {
+                    padding-left: 20px;
+                }
+
+                .ceo {
+                    margin-top: 0;
+                }
+
+                .rmc-log {
+                    margin-top: 30px;
+                }
+
+            }
+        </style>
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog  modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-bg">
+                        <div class="modal-header">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="responsive-body">
+                                <h2>What we build today should last for generations to come.</h2>
+                                <h2>We should embrace the purpose of the contruction </h2>
+                                <h2>and live with its value.</h2>
+                                <div class="founder">
+                                    <h3>R MARIA CYRIL</h3>
+                                    <p>FOUNDER-RMC GROUP OF COMPANIES</p>
+                                </div>
+                            </div>
+
+                            <div class="image-ceo">
+                                <div class="rmc-log">
+                                    <img class="rmc" src="./img/home/Logos/RMCWHite.png" alt="">
+                                    <p>GROUP OF COMPANIES</p>
+                                </div>
+                                <img class="ceo" src="./img/RMCMaria.png" alt="">
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
     <button id="scrollToTop" type="button">
         <i class="icon icon-arrow_right"></i>
     </button>
     <script src="js/modules/spots.js"></script>
     <script src="js/common.min.js"></script>
     <script src="js/index.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+    <script>
+
+        document.addEventListener("DOMContentLoaded", () => {
+            const modalEle = document.querySelector("#staticBackdrop");
+            const myModal = bootstrap.Modal.getOrCreateInstance(modalEle);
+            myModal.show();
+        })
+    </script>
 </body>
 
 </html>
